@@ -1,0 +1,36 @@
+﻿<Page x:Class="practice_pw_1.DecorationsPage"
+      xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+      xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+      xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+      xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+      xmlns:local="clr-namespace:practice_pw_1"
+      mc:Ignorable="d" 
+      d:DesignHeight="410" d:DesignWidth="780"
+      WindowTitle="Учет украшений для торта">
+
+    <Grid>
+        <Button Content="Закрыть" HorizontalAlignment="Right" Margin="0,0,10,10.6" VerticalAlignment="Bottom" Width="75" Click="Button_Close_Click"/>
+        <DataGrid Margin="376,10,10,34.6" x:Name="dataGrid"/>
+        <Button x:Name="printButton" Content="Вывести украшения для торта" HorizontalAlignment="Right" Margin="0,0,215,10.6" VerticalAlignment="Bottom" Width="189" Click="cakeDecorationPrintButton_Click" IsEnabled="False"/>
+        <Label Content="Артикул:" HorizontalContentAlignment="Right" HorizontalAlignment="Left" Margin="10,10,0,0" VerticalAlignment="Top" Width="137"/>
+        <Label Content="Название:" HorizontalContentAlignment="Right" HorizontalAlignment="Left" Margin="10,41,0,0" VerticalAlignment="Top" Width="137"/>
+        <Label Content="Единицы:" HorizontalContentAlignment="Right" HorizontalAlignment="Left" Margin="10,72,0,0" VerticalAlignment="Top" Width="137"/>
+        <Label Content="Количество:" HorizontalContentAlignment="Right" HorizontalAlignment="Left" Margin="10,103,0,0" VerticalAlignment="Top" Width="137"/>
+        <Label Content="Главный поставщик:" HorizontalContentAlignment="Right" HorizontalAlignment="Left" Margin="10,134,0,0" VerticalAlignment="Top" Width="137"/>
+        <Label Content="Тип ингредиента:" HorizontalContentAlignment="Right" HorizontalAlignment="Left" Margin="10,165,0,0" VerticalAlignment="Top" Width="137"/>
+        <Label Content="Цена:" HorizontalContentAlignment="Right" HorizontalAlignment="Left" Margin="10,196,0,0" VerticalAlignment="Top" Width="137"/>
+        <Label Content="Вес:" HorizontalContentAlignment="Right" HorizontalAlignment="Left" Margin="10,227,0,0" VerticalAlignment="Top" Width="137"/>
+        <TextBox x:Name="textBox1" HorizontalAlignment="Left" Height="23" Margin="152,10,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="219"/>
+        <TextBox x:Name="textBox3" HorizontalAlignment="Left" Height="23" Margin="152,75,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="219"/>
+        <TextBox x:Name="textBox2" HorizontalAlignment="Left" Height="23" Margin="152,44,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="219"/>
+        <TextBox x:Name="textBox4" HorizontalAlignment="Left" Height="23" Margin="152,106,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="219"/>
+        <TextBox x:Name="textBox5" HorizontalAlignment="Left" Height="23" Margin="152,136,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="219"/>
+        <TextBox x:Name="textBox6" HorizontalAlignment="Left" Height="23" Margin="152,168,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="219"/>
+        <TextBox x:Name="textBox7" HorizontalAlignment="Left" Height="23" Margin="152,199,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="219"/>
+        <TextBox x:Name="textBox8" HorizontalAlignment="Left" Height="23" Margin="152,230,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="219"/>
+        <Button x:Name="changeButton" Content="Изменить" HorizontalAlignment="Left" Margin="152,286,0,0" VerticalAlignment="Top" Width="219" Click="changeButton_Click" IsEnabled="False"/>
+        <Label Content="ID:" HorizontalContentAlignment="Right" HorizontalAlignment="Left" Margin="10,255,0,0" VerticalAlignment="Top" Width="137"/>
+        <TextBox x:Name="textBox11" HorizontalAlignment="Left" Height="23" Margin="152,258,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="219"/>
+        <Button x:Name="deleteButton" Content="Удалить по ID" HorizontalAlignment="Left" Margin="152,310,0,0" VerticalAlignment="Top" Width="219" Click="deleteButton_Click" IsEnabled="False"/>
+    </Grid>
+</Page>
